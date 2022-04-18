@@ -43,7 +43,7 @@
 //       cosas que te gustan.
 
 
-
+let myArray = ['pizza', 'ñoquis', 'milanesas', 'facturas']
 
 
 
@@ -64,7 +64,7 @@
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
 
-
+console.log(myArray.length);
 
 
 
@@ -90,6 +90,7 @@
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
+console.log(myArray[2]);
 
 
 
@@ -116,12 +117,13 @@
 // con cualquier otra cosa.
 
 
-
+myArray[0] = 'Cualquier otra cosa'
 
 
 
 // TAREA: console.log todo el array para verificar.
 
+console.log(myArray);
 
 
 
@@ -146,7 +148,8 @@
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
-
+myArray.push('chocolate');
+console.log(myArray)
 
 
 
@@ -182,8 +185,10 @@
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
 
-
-
+const nuevoArray = ['oso', 'perro', 'caballo' ,'pato'];
+console.log(nuevoArray)
+//nuevoArray = ['Juan', 'Pedro', 'Gato'];
+//console.log(nuevoArray)
 
 
 
@@ -191,6 +196,11 @@
 //       con notación de corchetes (array[1]) y
 //       asigna un nuevo array completamente nuevo a la constante
 
+
+nuevoArray.push('pez');
+//console.log(nuevoArray);
+nuevoArray[1] = 'perritos';
+console.log(nuevoArray);
 
 
 
@@ -222,29 +232,34 @@
 
 */
 
-/*
-    Bucles while (mientras)
-    ============
 
-    El bucle 'While' hará una acción para siempre hasta que se cumpla alguna condición.
+    //Bucles while (mientras)
+    //============
 
-    Ejemplo:
+//    El bucle 'While' hará una acción para siempre hasta que se cumpla alguna condición.
+
+//    Ejemplo:
 
     // punto de partida
-    let numero = 0;
+    //let numero = 0;
 
-    while (numero < 10) {
+    //while (numero < 10) {
       // 'menos de 10' es una condición (punto final)
 
-      console.log('JavaScript es increíble!');
+      //console.log('JavaScript es increíble!');
 
-      numero = numero + 1;
+      //numero = numero + 1;
       // + 1 es un contador / tamaño del paso
-    }
-*/
+    //}
+
 
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
+let num = 0
+while(num < 10 ){
+    console.log('JavaScript es increíble!');
+    num = num + 1;
+}
 
 
 
@@ -268,6 +283,12 @@
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
+
+let ini = 3;
+for(let i = 3; i < 22 ; i++){
+    console.log(ini);
+    ini = ini + 3;
+}
 
 
 
@@ -296,7 +317,9 @@
 
 // TAREA: Probalo con tu comidasFavoritas array.
 
-
+for (let i = 0; i < myArray.length ; i++){
+    console.log('Me encanta comer ' +  myArray[i]);
+}
 
 
 
@@ -322,6 +345,13 @@
         }
     }
 */
+for (let i = 10; i>= 0; i--){
+    if( i === 5 ){
+        console.log('estamos en el medio')
+    }else {
+        console.log(i);
+    }
+}
 
 // TAREA: Ha llegado el momento de un ejercicio clásico: 'FizzBuzz'.
 
@@ -339,8 +369,16 @@
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
 
-
-
+for (let i = 1; i <= 50; i++){
+    if(i % 3 === 0 ){
+        console.log('Frizz');
+    }else if(i % 5 === 0){
+        console.log('Buzz');
+    }else if(i % 3 === 0  && i % 5 === 0){
+        console.log('FizzBuzz')
+    }
+    else (console.log(i));
+};
 
 
 

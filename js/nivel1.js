@@ -40,12 +40,19 @@
 
 // Tarea: Ahora te toca a vos! Acá abajo escribí una alerta que diga "Hola mundo!"
 
+//alert('Hola Mundo!');
+
 
 // Tarea: Una vez que la alerta funcione, comentala poniendo '//' en la línea donde está el código y guardá los cambios.
 // Una vez que recargás la página, ya no debería aparecer más.
 
 
+
 // Tarea: Ahora probá hacer un console.log de un mensaje que queramos.
+
+
+
+//console.log("nombreDeVariable es " + nombreDeVariable);
 
 
 // Consejo: Para recargar el navegador podemos apretar 'CMD + R' en Mac y 'CTRL + R' en
@@ -101,6 +108,8 @@
 */
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
+//let numero1 ;
+//let numero2;
 
 
 /*
@@ -115,6 +124,8 @@
 // Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropriado y
 // mostralas con un alert.
 
+//let nombre = Flor;
+//let edad = 34;
 
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
 
@@ -150,8 +161,14 @@
 
 // TAREA: Crear una constante y mostrarla con un alert
 
+//const saludo = "Hola a tod@s"; 
+//alert(saludo)
+
 
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
+
+//const numero = 1;
+//numero = 1;
 
 
 // Consejo: No te olvides de comentar (//) los alerts y los errores intencionales (como en la tarea anterior) para
@@ -182,6 +199,12 @@
 // * 3ra variable llamada resultadoMultiplicacion que va a ser igual a
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
+
+//let diez = 10;
+//let tres = 3
+//let resultadoMultiplicacion = diez * tres;
+//console.log(resultadoMultiplicacion)
+
 
 
 /*
@@ -239,11 +262,22 @@
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
+/*function sumar(numero1, numero2){
+    return numero1 + numero2;
+}
+console.log (sumar(2,3));
+
+
 
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
 
+//function restar(arg1, arg2){
+//   return arg1 - arg2;
+//}
+
+console.log(restar(5, 1));
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
@@ -320,6 +354,16 @@
 // Paso 1 - Crear una variable llamada 'operador' y asignarle el valor '+'.
 // Paso 2 - Crear 2 variables que contengan 2 números cualquiera.
 // Paso 3 - Crear una condición if/else basada en el operador que tenemos.
+
+//let operador = "-";
+//let numero5 = 5;
+//let numero8 = 8;
+//if(operador === "+") {
+//    console.log( sumar(numero5,numero8));
+//}else{
+//    console.log( restar(numero5,numero8))
+//};
+
 //
 // Si tenemos un operador igual a '+', llamamos la función 'sumar' con nuestros números (las variables del paso 2).
 // Si no, tenemos que llamar la función 'restar', con nuestros números (las variables del paso 2).
@@ -328,6 +372,46 @@
 //
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
+
+//TAREA 2
+//Crear una función que tome como parámetro el año actual y el año de nacimiento
+
+//let anoActual = prompt('Por favor ingresa el año actual', '2022');
+//let anoDeNac = prompt('Por favor ingresa tu año de nacimiento');
+
+//y calcule la edad del usuario (más o menos)
+//Preguntarle estos datos al usuario y guardarlos en dos variables
+//Ejecutar la función con éstos datos 
+
+//let edad = anoActual - anoDeNac;
+
+//Imprimir el resultado por consola
+//console.log('Tu edad es ' + edad);
+
+//TAREA 3
+//Preguntar el salario anual y calcular el salario mensual
+
+//let salarioAnual = prompt('Ingresa tu salario anual')
+//let salarioMensual = salarioAnual /12;
+//alert('Tu salario mensual es de: ' + salarioMensual)
+
+//TAREA 4
+//Preguntar el salario mensual y calcular el anual
+
+//let salarioMensual = prompt('Ingresa tu salario mensual')
+//let salarioAnual = salarioMensual * 12;
+//alert('Tu salario anual es de: ' + salarioAnual)
+
+//TAREA 5
+//Diario, semanal, por hora. Etc
+
+//let salarioMes = prompt('Por favor ingresa tu salario mensual');
+//let salarioDia = salarioMes / 21;
+//let salarioHora = salarioDia / 8;
+//let salarioAño = salarioMes * 12;
+//alert('Tu salario por dia es de '+ salarioDia);
+//alert('Tu salario anual es de ' + salarioAño);
+//alert('Tu salario por hora es de '+ salarioHora)
 
 
 /*
@@ -359,8 +443,23 @@
 */
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
+/*
+let num1 = 200;
+let num2 = 5;
+function dividir (num1, num2){
+    return num1/num2;
+}
 
+function multiplicar(num1, num2){
+    return num2 * num1;
+}
 
+function sumar (num1,num2){
+    return num1 + num2; 
+}
+function restar (num1,num2){
+    return num1 - num2
+}
 
 
 
@@ -371,8 +470,17 @@
 //       else console.log - "Perdón, no conozco ese operador".
 
 
-
-
+/*let operador = prompt('por favor ingresa un operador');
+if(operador === '+'){
+    console.log(sumar(num1, num2));
+} else if (operador === '-'){
+    console.log(restar(num1, num2));
+} else if (operador === '/'){
+    console.log(dividir(num1, num2));
+} else if (operador === '*'){
+    console.log(multiplicar(num1, num2))
+}else (console.log ('No reconozozco el operador'))
+*/
 
 /*
     Operadores Booleanos
@@ -399,7 +507,14 @@
 
 
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
-// resultado en la consola.
+/* resultado en la consola.
+
+let numero = prompt('Ingresa cualquier numero menos el 5');
+while(numero !== 5){
+    console.log ('Excelente')
+
+}
+/*
 
 
 ////////////////////////////////////////////////////////////////////////////

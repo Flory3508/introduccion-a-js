@@ -3,7 +3,6 @@ document.querySelector('#calcular-salario-mensual').onclick = function(){
     const salarioMensual = calcularSalarioMensual(salarioAnual);
 
     document.querySelector('#salario-mensual').value = salarioMensual;
-
     return false;
 }
 

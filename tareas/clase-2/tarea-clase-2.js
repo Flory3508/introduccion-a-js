@@ -8,6 +8,28 @@
 // Paso 1 - Crear una variable llamada 'operador' y asignarle el valor '+'.
 // Paso 2 - Crear 2 variables que contengan 2 números cualquiera.
 // Paso 3 - Crear una condición if/else basada en el operador que tenemos.
+
+let num1 = 0;
+let num2 = 0;
+
+function sumar(num1, num2) {
+    return num1 + num2;
+}
+//console.log (sumar(2,3));
+
+function restar(num1, num2) {
+    return num1 - num2;
+}
+
+let operador = "-";
+num1 = 5;
+num2 = 8;
+
+if (operador === "+") {
+    console.log(sumar(num1, num2));
+} else {
+    console.log(restar(num1, num2))
+};
 //
 // Si (if) tenemos un operador igual a '+', llamamos (ejecutamos. sumar(1,2)) la función
 // 'sumar' con nuestros números (las variables del paso 2).
@@ -21,7 +43,3 @@
 
 
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings
-console.log(
-    `El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`
-);
-

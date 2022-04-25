@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>      
+    <link rel='stylesheet'   href='main.css'>
+    <title>TAREA 6</title>
+</head>
+<body>
+    <h1 id="titulo">Tu promedio de edad familiar</h1>
+
+<form id="calculador-edades">
+        <label for= "cantidad-integrantes" id="texto-ingresa-int">Por favor ingresa la cantidad de integrantes de tu familia</label><p></p>
+        <input type="number" id="cantidad-integrantes"/>
+        <button type="submit" id="siguiente-paso">Ingresar</button>
+        
+        <div id="integrantes">
+
+        </div>
+        
+        <button type="button" id="calcular" class="oculto">Calcular</button>
+
+        <div id="analisis" class="oculto">
+            <p>La mayor edad es: <strong id="mayor-edad"></strong></p>
+            <p>La menor edad es: <strong id="menor-edad"></strong></p>
+            <p>El promedio de la edad es: <strong id="promedio-edad"></strong></p>
+        </div>
+        
+        <button type="reset" id="resetear">Resetear</button>
+</form>
+        <script type="text/javascript" src='calculos-mio.js'></script>
+        <script type="text/javascript" src='tarea-clase-6.js'></script>
+       
+</body>
+</html>

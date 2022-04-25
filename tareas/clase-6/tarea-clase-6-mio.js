@@ -56,6 +56,7 @@ function crearIntegrante(indice) {
 
   const $label = document.createElement('label');
   $label.textContent = 'Edad del integrante #: ' + (indice + 1);
+  
   const $input = document.createElement('input');
   $input.type = 'number';
 
@@ -100,6 +101,7 @@ function obtenerEdadesIntegrantes() {
   }
   return edades;
 }
+
 
 /*
 TAREA:

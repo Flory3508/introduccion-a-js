@@ -1,0 +1,10 @@
+#titulo {
+    color: rgb(250, 249, 249);
+    background-color: rgb(27, 114, 114);
+    font-size: 235%;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+.oculto {
+    display: none;
+}
